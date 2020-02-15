@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Container para padding no conteudo -->
+    <div class="container">
+    
+    <!-- Nav -->
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#">O que é</a></li>
+          </ul>
+          <img class="logo" src="img/logo.svg" />
+          <ul>
+            <li><a href="#">Participe</a></li>
+          </ul>
+        </nav>
+      </header>
+    <!-- Final Nav -->
+
+    <!-- Conteudo -->
+      <main>
+        <div class="concurso-img">
+          <img src="img/concurso-img.jpg" />
+        </div>
+
+        <div class="concurso-txt">
+          <h1>Concurso cultural</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+            accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+            Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra
+            vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
+          </p>
+          <button>Participe</button>
+        </div>
+
+        <div class="concurso-txt">
+          <h1>Participe agora mesmo</h1>
+          <span><p>Preencha os dados abaixo e participe da promoção especial!</p></span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            euismod bibendum laoreet. Proin gravida dolor sit amet lacusLorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+            bibendum laoreet. Proin gravida dolor sit amet lacusLorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+            laoreet. Proin gravida dolor sit amet lacusLorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+            Proin gravida dolor sit amet lacusLorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+            gravida dolor sit amet lacus
+          </p>
+        </div>
+
+        <div class="form">
+          <form action="./email.php" method="POST" onsubmit="return validarForm()">
+            <div class="label-align">
+              <label for="nome">Nome </label>
+              <input type="text" id="inputNome" name="nome" />
+            </div>
+            <div class="label-align">
+              <label for="email">Email </label>
+              <input type="email" id="inputEmail" name="email" />
+            </div>
+            <div class="label-align">
+              <label for="telefone">Telefone </label>
+              <input type="tel" id="inputTel" name="telefone" />
+            </div>
+            <div id="mensagem-erro"></div>
+            <button name="submit">Enviar</button>
+          </form>
+        </div>
+      </main>
+      <!-- Final Conteudo -->
+
+    </div>
+    <!-- Final container -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
